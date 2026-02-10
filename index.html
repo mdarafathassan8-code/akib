@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Offer</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+  font-weight:700;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px;
+}
+
+.logo{
+  font-size:20px;
+  color:#1db954;
+  font-weight:900;
+}
+
+.order-btn{
+  background:#1db954;
+  border:none;
+  color:#fff;
+  padding:10px 18px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:900;
+}
+
+/* MAIN */
+.container{
+  padding:16px;
+  text-align:center;
+}
+
+.title{
+  color:#1db954;
+  font-size:18px;
+  line-height:1.5;
+  margin-bottom:12px;
+}
+
+.price{
+  font-size:16px;
+  margin-bottom:18px;
+}
+
+.price span{
+  display:block;
+  margin-top:6px;
+  font-size:20px;
+  color:#1db954;
+}
+
+/* IMAGE PLACEHOLDER */
+.placeholder{
+  width:100%;
+  height:200px;
+  border:2px dashed #1db954;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#1db954;
+  font-size:16px;
+  margin:16px 0;
+}
+
+/* VIDEO PLACEHOLDER */
+.video-box{
+  position:relative;
+}
+
+.play-btn{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:60px;
+  height:60px;
+  background:red;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+}
+
+/* TEXT */
+.watch{
+  color:#1db954;
+  margin:10px 0 20px;
+  font-size:14px;
+}
+
+.subtitle{
+  font-size:16px;
+  margin-bottom:14px;
+}
+
+/* BOOK CARD */
+.book{
+  border:2px solid #1db954;
+  border-radius:18px;
+  padding:16px;
+  text-align:left;
+}
+
+.book-no{
+  color:#1db954;
+  font-size:14px;
+  margin-bottom:6px;
+}
+
+.book-title{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.book-desc{
+  font-size:14px;
+  line-height:1.6;
+  color:#ddd;
+  margin-bottom:14px;
+}
+
+.meta{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:#1db954;
+  border-top:1px solid #1db954;
+  padding-top:10px;
+}
+
+/* SPACE */
+.space{
+  height:40px;
+}
+</style>
+</head>
+
+<body>
+
+
+<style>
+/* Top bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px;
+}
+
+/* Rotating border circle */
+.circle-border {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 3px;
+    background: conic-gradient(#7CFF7C, #C8FFD4, #7CFF7C);
+    animation: spin 2s linear infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+/* Image inside (NOT animated) */
+.circle-border img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Border rotation */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Order button */
+.order-btn {
+    background: #7CFF7C;
+    color: #000;
+    padding: 11px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 12px rgba(124, 255, 124, 0.6);
+    transition: transform 0.2s;
+}
+
+.order-btn:hover {
+    transform: scale(1.05);
+}
+
+/* White line */
+.white-line {
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    margin-top: 10px;
+}
+</style>
+
+<!-- TOP SECTION -->
+<div class="top-bar">
+
+    <!-- Image with animated border -->
+    <a href="https://postimg.cc/XGZ403yH" target="_blank" class="circle-border">
+        <img src="https://i.postimg.cc/NMDMmjGc/Messenger-creation-68325BCB-C038-411D-8BE1-97ED06CB9F8E.jpg" alt="Logo">
+    </a>
+
+    <!-- Checkout Button -->
+    <a href="https://your-checkout-page-link.com" class="order-btn">
+        🛒 অর্ডার করতে চাই
+    </a>
+
+</div>
+
+<div class="white-line"></div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <div class="title">
+    📊 আপনি যদি ট্রেডিং শিখতে চান সঠিক ও প্র্যাকটিক্যাল পথে, তাহলে এই বইটি আপনার জন্য একটি অপরিহার্য গাইড 📚
+  </div>
+
+  <div class="price">
+   ৩০০০/= টাকা মূল্যের বইটি পাচ্ছেন 
+    <span>মাত্র ১৯৯৯/= টাকায়!</span>
+  </div>
+
+<a href="https://t.me/+1cRzjWS2GLZiZGFl" target="_blank" style="
+  display:block;
+  width:100%;
+  text-align:center;
+  background:#229ED9;
+  color:white;
+  padding:16px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:800;
+  font-size:16px;
+">
+  📢 Click to join Telegram Channel
+</a>
+
+  <div class="title">
+বইটির নতুন আপডেট জানতে আমাদের টেলিগ্রাম এ এখনি যুক্ত হোন
+  </div>
+
+
+
+  <div class="subtitle">
+    আমাদের বইটি থেকে যা যা শিখতে পারবেন
+  </div>
+
+<div class="wrapper">
+
+<!-- BOOK CARD -->
+  <div class="card">
+
+    <div class="book-top">
+      <div class="placeholder">
+        <img src="https://i.postimg.cc/w7S3GRKX/Messenger-creation-4AD82F90-78FF-464D-95D6-00F00FE5776E.jpg" alt="Book Image">
+      </div>
+
+      <div class="book-info">
+        <div class="book-no">📘 বই - ৫</div>
+        <div class="book-en">SIMPLE TRADING BOOK</div>
+
+        <div class="meta">
+          <span>📄 64 pages</span>
+          <span>🌐 English</span>
+          <span>⭐ 98%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      Trading Shop BD — The Best Trading Books in Bangladesh
+    </div>
+
+    <div class="main-title">
+      সিম্পল ট্রেডিং বুক
+    </div>
+
+    <div class="desc">
+      আমাদের এই বইটি থেকে আপনি একজন ট্রেডার হিসেবে FOMO এড়ানোর উপায় শিখতে পারবেন
+      এবং কিভাবে FOMO মোকাবেলা করে ডিসিপ্লিন মেনে ট্রেড করতে হয় তা জানতে পারবেন।
+      এছাড়াও ট্রেডিং কৌশল ও ট্রেডিং সাইকোলজি সম্পর্কে পরিষ্কার ধারণা পাবেন।
+    </div>
+
+  </div>
+
+  <!-- BOOK -->
+  <div class="book">
+    <div class="book-no">📘 বই - ১</div>
+
+    <div class="book-title">
+      সিম্পল ক্যান্ডেলস্টিক প্যাটার্ন
+    </div>
+
+    <div class="book-desc">
+      এই বইটি থেকে আপনি ক্যান্ডেল সম্পর্কে বিস্তারিত জানতে পারবেন।
+      কোন ক্যান্ডেলের জন্য শর্ট ট্রেড নিবেন, কোন ক্যান্ডেলের জন্য লং ট্রেড নিবেন
+      এবং কোন ক্যান্ডেলে ট্রেড নেওয়া উচিত নয় তা পরিষ্কারভাবে শেখানো হয়েছে।
+    </div>
+
+    <div class="meta">
+      <span>📄 Pages: 10</span>
+      <span>🌐 বাংলা</span>
+      <span>⭐ 98%</span>
+    </div>
+  </div>
+
+  <div class="space"></div>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Book Checkout</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:700;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+/* CONTAINER */
+.wrapper{
+  padding:16px;
+}
+
+/* CARD */
+.card{
+  border:2px solid #1db954;
+  border-radius:18px;
+  padding:16px;
+  margin-bottom:24px;
+}
+
+/* TOP SECTION */
+.book-top{
+  display:flex;
+  gap:12px;
+}
+
+.placeholder{
+  width:110px;
+  height:150px;
+  border:2px dashed #1db954;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#1db954;
+  font-size:12px;
+  text-align:center;
+}
+
+.book-info{
+  flex:1;
+}
+
+.book-no{
+  color:#1db954;
+  font-size:14px;
+  margin-bottom:6px;
+}
+
+.book-en{
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.meta{
+  display:flex;
+  gap:14px;
+  font-size:12px;
+  color:#1db954;
+  margin-top:10px;
+}
+
+/* BANNER */
+.banner{
+  border:1px solid #444;
+  padding:8px;
+  margin-top:12px;
+  font-size:12px;
+  text-align:center;
+}
+
+/* TITLE */
+.main-title{
+  font-size:22px;
+  margin:20px 0 10px;
+}
+
+/* DESC */
+.desc{
+  font-size:14px;
+  line-height:1.7;
+  color:#ddd;
+}
+
+/* ORDER BUTTON */
+.order-btn{
+  margin:24px auto;
+  width:100%;
+  max-width:280px;
+  display:flex;
+  justify-content:center;
+}
+
+.order-btn a{
+  background:#1db954;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:40px;
+  font-size:18px;
+  font-weight:900;
+}
+
+/* FAQ */
+.faq-title{
+  font-size:22px;
+  margin:30px 0 14px;
+}
+
+.faq{
+  border:1px solid #444;
+  padding:14px;
+  margin-bottom:12px;
+}
+
+.faq-q{
+  color:#1db954;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.faq-a{
+  font-size:13px;
+  color:#ddd;
+  line-height:1.6;
+}
+</style>
+</head>
+
+ <!-- ORDER BUTTON -->
+  <div class="order-btn">
+    <a href="checkout.html">🛒 অর্ডার করতে চাই</a>
+  </div>
+
+<body>
+
+  <!-- FAQ -->
+  <div class="faq-title">
+    আপনাদের কিছু কমন প্রশ্নঃ
+  </div>
+
+ <style>
+.faq-container{
+  max-width:900px; /* আগের চেয়ে বড় */
+  margin:40px auto;
+  padding:20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-wrapper{
+  background:#000;
+  border:2px solid #444;
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.faq-box{
+  border-bottom:1px solid #333;
+}
+
+.faq-box:last-child{
+  border-bottom:none;
+}
+
+.faq-question{
+  padding:18px 22px;
+  font-size:17px;
+  color:#fff;
+  cursor:pointer;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.faq-question span{
+  font-size:20px;
+  transition:0.3s ease;
+}
+
+.faq-box.active .faq-question{
+  color:#ff3b3b;
+}
+
+.faq-box.active .faq-question span{
+  transform:rotate(90deg);
+  color:#ff3b3b;
+}
+
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.45s ease;
+}
+
+.faq-answer p{
+  padding:0 22px 18px;
+  font-size:15px;
+  line-height:1.8;
+  color:#1db954;
+  font-weight:700;
+}
+</style>
+
+<div class="faq-container">
+  <div class="faq-wrapper">
+
+    <div class="faq-box">
+      <div class="faq-question">
+        প্রশ্ন ১ঃ শেখা কি সত্যিই কঠিন❓
+        <span>▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          না। সঠিক গাইডলাইন থাকলে ট্রেডিং শেখা অনেক সহজ।
+          এই বইয়ে বেসিক থেকে অ্যাডভান্স পর্যন্ত ধাপে ধাপে বোঝানো হয়েছে,
+          যাতে নতুনরাও সহজে বুঝতে পারে।
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-question">
+        প্রশ্ন ২ঃ নতুনরা কি এই বই পড়ে ট্রেডিং শুরু করতে পারবে❓
+        <span>▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          অবশ্যই। ক্যান্ডেলস্টিক থেকে শুরু করে কখন ট্রেড নিতে হবে
+          এবং কখন অপেক্ষা করতে হবে—সবকিছু সহজভাবে বুঝিয়ে দেওয়া হয়েছে।
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-question">
+        প্রশ্ন ৩ঃ ট্রেডিং সাইকোলজি কেন গুরুত্বপূর্ণ❓
+        <span>▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          অনেক সময় ভুল সিদ্ধান্ত হয় ইমোশনের কারণে।
+          এই বইয়ে ইমোশন কন্ট্রোল ও ডিসিপ্লিন মেইনটেইন করে
+          কিভাবে ভালো ট্রেড করা যায় তা বোঝানো হয়েছে।
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-question">
+        প্রশ্ন ৪ঃ এই বই কারা পড়লে সবচেয়ে বেশি উপকার পাবে❓
+        <span>▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          যারা নতুন ট্রেডার, যারা বারবার লসে পড়ছেন
+          অথবা যারা নিয়ম মেনে ট্রেড করতে শিখতে চান—
+          তাদের জন্য এই বইটি বিশেষভাবে উপকারী।
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-question">
+        প্রশ্ন ৫ঃ লস কমানোর কোনো কৌশল শেখানো হয়েছে❓
+        <span>▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          হ্যাঁ। সঠিক মানি ম্যানেজমেন্ট, রিস্ক কন্ট্রোল
+          এবং ইমোশন ম্যানেজ করার মাধ্যমে কিভাবে লস কমিয়ে
+          প্রফিট ধরে রাখা যায় তা শেখানো হয়েছে।
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-question">
+        প্রশ্ন ৬ঃ এই বই পড়ে কি নিয়মিত প্রফিট করা সম্ভব❓
+        <span>▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          ট্রেডিংয়ে প্রফিট নির্ভর করে আপনার অনুশীলন,
+          ধৈর্য এবং সঠিক নিয়ম মেনে চলার উপর।
+          এই বই দীর্ঘমেয়াদে কনসিস্টেন্ট প্রফিটের
+          ভিত্তি তৈরি করতে সাহায্য করবে।
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-question">
+        প্রশ্ন ৭ঃ অর্ডার করার কত দিনের মধ্যে বই হাতে পাবো❓
+        <span>▶</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          অর্ডার কনফার্ম হওয়ার পর সাধারণত
+          1–4 কার্যদিবসের মধ্যে বাংলাদেশের যেকোনো জায়গায়
+          ডেলিভারি পৌঁছে যায়।
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(q => {
+  q.addEventListener("click", () => {
+    const box = q.parentElement;
+    const answer = box.querySelector(".faq-answer");
+
+    if(box.classList.contains("active")){
+      box.classList.remove("active");
+      answer.style.maxHeight = null;
+    }else{
+      document.querySelectorAll(".faq-box").forEach(b=>{
+        b.classList.remove("active");
+        b.querySelector(".faq-answer").style.maxHeight = null;
+      });
+      box.classList.add("active");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
+</script>
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Delivery Text</title>
+    <style>
+        .free-delivery {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0a8a0a;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .animated-mark {
+            display: inline-block;
+            color: red;
+            animation: pulse 0.8s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.4);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="free-delivery">
+        সারা বাংলাদেশে ডেলিভারি চার্জ সম্পুর্ন ফ্রি 
+        <span class="animated-mark">‼️</span>
+    </div>
+
+
+<!-- ORDER SECTION START -->
+<section id="order" style="max-width:600px;margin:auto;padding:15px;">
+
+<h2 style="color:#2e7d32;">Billing Details</h2>
+
+<form action="https://formsubmit.co/powermentorshop@gmail.com" method="POST">
+
+<input type="hidden" name="_subject" value="New Order - Power Mentor Premium Book">
+<input type="hidden" name="_next" value="success.html">
+<input type="hidden" name="_captcha" value="false">
+
+<label>আপনার নাম লিখুন *</label>
+<input type="text" name="Name" required>
+
+<label>আপনার ঠিকানা লিখুন *</label>
+<textarea name="Address" required></textarea>
+
+<label>আপনার মোবাইল নাম্বার লিখুন *</label>
+<input type="text" name="Phone" required>
+
+<h3>Your Order</h3>
+
+<div style="display:flex;gap:10px;align-items:center;">
+<img src="https://i.postimg.cc/w7S3GRKX/Messenger-creation-4AD82F90-78FF-464D-95D6-00F00FE5776E.jpg" width="70" style="border-radius:8px;">
+<div>
+<b>Power Mentor Premium Book</b><br>
+পরিমাণ: 1
+</div>
+</div>
+
+<p><b>Total:</b> ১৯৯৯৳</p>
+
+<input type="hidden" name="Product" value="Power Mentor Premium Book">
+<input type="hidden" name="Price" value="1999 BDT">
+
+<button type="submit" style="width:100%;background:#2e7d32;color:#fff;padding:15px;border:none;border-radius:30px;font-size:18px;margin-top:10px;">
+অর্ডার করুন
+</button>
+
+</form>
+</section>
+<!-- ORDER SECTION END -->
+
+
+</body>
+</html>
